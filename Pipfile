@@ -8,3 +8,7 @@ pandas = "*"
 dash = "*"
 
 [dev-packages]
+
+[scripts]
+main="python src/main.py"
+
