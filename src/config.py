@@ -31,7 +31,7 @@ def read_df():
 
 def read_df_zip():
     import zipfile
-    with zipfile.ZipFile(zipfilename()) as zipfile:
-        with zipfile.open(csvfile()) as csv:
+    with zipfile.ZipFile(zipfilename()) as zipf:
+        with zipf.open(csvfile()) as csv:
             df = pd.read_csv(csv)
             return df
